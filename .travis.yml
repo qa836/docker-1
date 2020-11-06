@@ -3,7 +3,7 @@ service:
 
 script:
 - sudo ip a
-- ping 10.80.1.19 -c 4
+- ping 10.30.0.28 -c 4
 - sudo cat /etc/docker/daemon.json
 - sudo rm /etc/docker/daemon.json
 - sudo cp daemon.json /etc/docker/daemon.json
