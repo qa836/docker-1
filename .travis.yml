@@ -7,7 +7,7 @@ script:
 - sudo rm /etc/docker/daemon.json
 - sudo cp daemon.json /etc/docker/daemon.json
 - sudo systemctl restart docker
-- docker run debian ls
-- docker run ubuntu:16.04 ls
-- docker run ubuntu:18.04 ls
-- docker run ubuntu:20.04 ls
+- docker run node ls
+- docker run ruby ls
+# - docker run ubuntu:18.04 ls
+# - docker run ubuntu:20.04 ls
