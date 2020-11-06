@@ -2,8 +2,9 @@ service:
 - docker
 
 script:
+- ping 10.80.1.19 -c 4
 - sudo cat /etc/docker/daemon.json
 - sudo rm /etc/docker/daemon.json
+- echo '{"registry-mirrors": ["http://10.80.1.19:5000"], "mtu": 1460}' | sudo tee /etc/docker/daemon.json
 - sudo systemctl restart docker
 - docker run openjdk ls
-- ping 10.10.3.232 -c 4
