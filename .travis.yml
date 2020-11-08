@@ -14,3 +14,12 @@ script:
 - docker run ruby ls
 # - docker run ubuntu:18.04 ls
 # - docker run ubuntu:20.04 ls
+
+jobs:
+  include:
+  - rvm: 2.7.2
+    name: Ruby 2.7.2
+  - rvm: 2.7.1
+    name: Ruby 2.7.1
+  - rvm: 2.7.0
+    name: Ruby 2.7.0
