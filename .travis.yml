@@ -17,27 +17,27 @@ script:
 # - docker run ubuntu:18.04 ls
 # - docker run ubuntu:20.04 ls
 
-jobs:
-  include:
-  - rvm: 2.7.2
-    name: Ruby 2.7.2
-  - rvm: 2.7.1
-    name: Ruby 2.7.1
-  - rvm: 2.7.0
-    name: Ruby 2.7.0
-  - rvm: 2.6.0
-    name: Ruby 2.6.0
-  - rvm: 2.6.1
-    name: Ruby 2.6.1
-  - rvm: 2.6.2
-    name: Ruby 2.6.2
-  - rvm: 2.6.3
-    name: Ruby 2.6.3
-  - rvm: 2.6.4
-    name: Ruby 2.6.4
-  - rvm: 2.6.5
-    name: Ruby 2.6.5
-  - rvm: 2.6.6
-    name: Ruby 2.6.6   
+# jobs:
+#   include:
+#   - rvm: 2.7.2
+#     name: Ruby 2.7.2
+#   - rvm: 2.7.1
+#     name: Ruby 2.7.1
+#   - rvm: 2.7.0
+#     name: Ruby 2.7.0
+#   - rvm: 2.6.0
+#     name: Ruby 2.6.0
+#   - rvm: 2.6.1
+#     name: Ruby 2.6.1
+#   - rvm: 2.6.2
+#     name: Ruby 2.6.2
+#   - rvm: 2.6.3
+#     name: Ruby 2.6.3
+#   - rvm: 2.6.4
+#     name: Ruby 2.6.4
+#   - rvm: 2.6.5
+#     name: Ruby 2.6.5
+#   - rvm: 2.6.6
+#     name: Ruby 2.6.6   
     
     
