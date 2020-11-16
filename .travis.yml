@@ -1,5 +1,6 @@
-service:
-- docker
+# service:
+# - docker
+dist: trusty
 
 script:
 - sudo ip a
