@@ -20,6 +20,7 @@ script:
 - docker run ruby:2.7.0 ls
 - docker run ubuntu:18.04 ls
 - docker run ubuntu:20.04 ls
+- docker run damianszymanski/debian ls
 
 # jobs:
 #   include:
