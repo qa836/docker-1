@@ -27,7 +27,8 @@ script:
 - . /etc/os-release
 - systemd-analyze plot > file-$VERSION_CODENAME.svg
 - curl -F "UPLOADCARE_PUB_KEY=$UPLOADCARE_PUB_KEY" -F "UPLOADCARE_STORE=1" -F "file=@file-$VERSION_CODENAME.svg" "https://upload.uploadcare.com/base/"
-- sleep 600
+# - sleep 600
+- ls -l /var/lib/apt/periodic/update-success-stamp | awk '{print $6" "$7" "$8}'
 
 jobs:
     include:
