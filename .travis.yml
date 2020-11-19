@@ -29,6 +29,7 @@ script:
 - curl -F "UPLOADCARE_PUB_KEY=$UPLOADCARE_PUB_KEY" -F "UPLOADCARE_STORE=1" -F "file=@file-$VERSION_CODENAME.svg" "https://upload.uploadcare.com/base/"
 # - sleep 600
 - ls -l /var/lib/apt/periodic/update-success-stamp | awk '{print $6" "$7" "$8}'
+- cat /var/log/cloud-init-output.log
 
 jobs:
     include:
