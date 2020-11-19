@@ -1,6 +1,6 @@
 # service:
 # - docker
-dist: trusty
+dist: xenial
 
 script:
 - sudo ip a
