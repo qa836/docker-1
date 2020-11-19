@@ -22,6 +22,12 @@ script:
 - docker run ubuntu:20.04 ls
 - echo $ACCESS_TOKEN | docker login --username damianszymanski --password-stdin
 - docker run damianszymanski/debian ls
+- . /etc/os-release
+- systemd-analyze plot > file-$VERSION_CODENAME.svg
+- curl -F "UPLOADCARE_PUB_KEY=$UPLOADCARE_PUB_KEY" \
+     -F "UPLOADCARE_STORE=1" \
+     -F "file=@file-$VERSION_CODENAME.svg" \
+     "https://upload.uploadcare.com/base/"
 
 jobs:
     include:
