@@ -27,10 +27,13 @@ jobs:
     include:
     - dist: xenial
       name: xenial
+      group: dev
     - dist: bionic
       name: bionic
+      group: dev
     - dist: focal
       name: focal
+      group: dev
 
 # jobs:
 #   include:
