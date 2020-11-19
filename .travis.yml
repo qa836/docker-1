@@ -15,8 +15,8 @@ script:
 # - sudo systemctl restart docker
 # - sudo cat /etc/docker/daemon.json
 # - docker run microsoft/azure-cli ls
-# - docker run node ls
-# - docker run ruby ls
+- docker run node ls
+- docker run ruby ls
 # - docker run ruby:2.6.5 ls
 # - docker run ruby:2.7.0 ls
 # - docker run ubuntu:18.04 ls
