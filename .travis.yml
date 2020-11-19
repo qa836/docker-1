@@ -15,8 +15,11 @@ script:
 # - sudo systemctl restart docker
 # - sudo cat /etc/docker/daemon.json
 # - docker run microsoft/azure-cli ls
-- docker run node ls
-- docker run ruby ls
+- docker run alpine ls
+- docker run busybox ls
+- docker run httpd ls
+- docker run memcached ls
+- docker run mongo ls
 # - docker run ruby:2.6.5 ls
 # - docker run ruby:2.7.0 ls
 # - docker run ubuntu:18.04 ls
@@ -24,18 +27,18 @@ script:
 
 # - docker run damianszymanski/debian ls
 # - sleep 600
-- cat /etc/cloud/cloud.cfg
-- . /etc/os-release
-- systemd-analyze plot > file-$VERSION_CODENAME.svg
-- systemd-analyze --user
-- systemd-analyze --user blame
-- systemd-analyze --user critical-chain
+# - cat /etc/cloud/cloud.cfg
+# - . /etc/os-release
+# - systemd-analyze plot > file-$VERSION_CODENAME.svg
+# - systemd-analyze --user
+# - systemd-analyze --user blame
+# - systemd-analyze --user critical-chain
 # - systemd-analyze --user dump
-- curl -F "UPLOADCARE_PUB_KEY=$UPLOADCARE_PUB_KEY" -F "UPLOADCARE_STORE=1" -F "file=@file-$VERSION_CODENAME.svg" "https://upload.uploadcare.com/base/"
+# - curl -F "UPLOADCARE_PUB_KEY=$UPLOADCARE_PUB_KEY" -F "UPLOADCARE_STORE=1" -F "file=@file-$VERSION_CODENAME.svg" "https://upload.uploadcare.com/base/"
 # - sleep 600
-- ls -l /var/lib/apt/periodic/update-success-stamp | awk '{print $6" "$7" "$8}'
-- cat /var/log/cloud-init-output.log
-- cloud-init analyze show -i /var/log/cloud-init.log
+# - ls -l /var/lib/apt/periodic/update-success-stamp | awk '{print $6" "$7" "$8}'
+# - cat /var/log/cloud-init-output.log
+# - cloud-init analyze show -i /var/log/cloud-init.log
 # - sudo dpkg -l | grep ntp
 
 jobs:
